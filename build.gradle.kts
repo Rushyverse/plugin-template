@@ -1,11 +1,25 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import org.gradle.kotlin.dsl.`kotlin-dsl`
 
 plugins {
     embeddedKotlin("jvm")
     embeddedKotlin("plugin.serialization")
     id("com.github.johnrengelman.shadow") version "8.1.1"
-    `java-library`
+    id("io.gitlab.arturbosch.detekt") version "1.23.1"
+    jacoco
+}
+
+detekt {
+    // Allows having different behavior for CI.
+    // When building a branch, we want to fail the build if detekt fails.
+    // When building a PR, we want to ignore failures to report them in sonar.
+    val envIgnoreFailures = System.getenv("DETEKT_IGNORE_FAILURES")?.toBooleanStrictOrNull() ?: false
+    ignoreFailures = envIgnoreFailures
+
+    config.from(file("config/detekt/detekt.yml"))
+}
+
+jacoco {
+    reportsDirectory.set(file("${layout.buildDirectory.get()}/reports/jacoco"))
 }
 
 repositories {
