@@ -15,6 +15,10 @@ import net.kyori.adventure.text.format.NamedTextColor
 import org.bukkit.entity.Player
 import java.util.*
 
+/**
+ * Plugin of the project.
+ */
+@Suppress("unused")
 class TemplatePlugin : Plugin("idTemplate", "bundleTemplate") {
 
     override suspend fun onEnableAsync() {
@@ -22,7 +26,7 @@ class TemplatePlugin : Plugin("idTemplate", "bundleTemplate") {
         modulePlugin<TemplatePlugin>()
 
         commandTree("template") {
-            playerExecutor { player, commandArguments ->
+            playerExecutor { player, _ ->
                 player.sendMessage(Component.text("Hello, world!", NamedTextColor.GREEN))
             }
         }
