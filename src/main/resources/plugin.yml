@@ -1,8 +1,7 @@
 name: pluginTemplate
 version: 1.0
 author: Rushyverse
-api-version: 1.19
+api-version: 1.20
 main: com.github.rushyverse.template.TemplatePlugin
 depend:
-  - paper-api
-  - CommandAPI
+  - api
