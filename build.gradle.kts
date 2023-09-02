@@ -35,6 +35,13 @@ dependencies {
     val rushyApiVersion = "2.1.0"
     val commandApiVersion = "9.0.3"
 
+    val coroutineVersion = "1.6.4"
+    val mockBukkitVersion = "3.19.1"
+    val junitVersion = "5.10.0"
+    val mockkVersion = "1.12.5"
+    val kotestVersion = "5.6.2"
+    val koinVersion = "3.4.3"
+
     compileOnly(kotlin("stdlib"))
 
     "io.papermc.paper:paper-api:$paperVersion".let {
@@ -42,13 +49,28 @@ dependencies {
         testImplementation(it)
     }
 
-    compileOnly("com.github.Rushyverse:api:$rushyApiVersion")
+    "com.github.Rushyverse:api:$rushyApiVersion".let {
+        compileOnly(it)
+        testImplementation(it)
+    }
 
     // CommandAPI framework
     compileOnly("dev.jorel:commandapi-bukkit-core:$commandApiVersion")
     compileOnly("dev.jorel:commandapi-bukkit-kotlin:$commandApiVersion")
 
-    testImplementation(kotlin("test"))
+    // Tests
+    testImplementation(kotlin("test-junit5"))
+    testImplementation("com.github.seeseemelk:MockBukkit-v1.20:$mockBukkitVersion")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutineVersion")
+    testImplementation("io.kotest:kotest-assertions-core:$kotestVersion")
+    testImplementation("io.kotest:kotest-assertions-json:$kotestVersion")
+
+    testImplementation("org.junit.jupiter:junit-jupiter-params:$junitVersion")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
+    testImplementation("io.insert-koin:koin-test:$koinVersion") {
+        exclude("org.jetbrains.kotlin", "kotlin-test-junit")
+    }
+    testImplementation("io.mockk:mockk:$mockkVersion")
 }
 
 val javaVersion get() = JavaVersion.VERSION_17

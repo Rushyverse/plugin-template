@@ -23,6 +23,7 @@ class TemplateListener(plugin: Plugin): Listener {
      * @param event The event.
      */
     @EventHandler
+    @Suppress("unused")
     suspend fun onPlayerJoin(event: PlayerJoinEvent) {
         val player = event.player
         player.sendMessage("Welcome to the server!")
