@@ -9,11 +9,11 @@ This document shows you how to get started contributing to this project.
     - Validate the fork creation. ![](./docs/images/create_fork_button.png)
 - Clone your fork by **HTTPS** or **SSH** method (as you prefer).
   ```shell
-  # With SSH method
-  git clone git@github.com:MyName/template.git
-
   # With HTTPS method
   https://github.com/MyName/template.git
+  
+  # With SSH method
+  git clone git@github.com:MyName/template.git
   ```
   ![](./docs/images/fork_clone_button.png)
 - Check out a new branch based and name it to what you intend to do:
