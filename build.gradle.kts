@@ -39,7 +39,7 @@ dependencies {
     val mockBukkitVersion = "3.19.1"
     val junitVersion = "5.10.0"
     val mockkVersion = "1.12.5"
-    val kotestVersion = "5.6.2"
+    val kotestVersion = "5.7.1"
     val koinVersion = "3.4.3"
 
     compileOnly(kotlin("stdlib"))
