@@ -31,3 +31,7 @@ We're using [Detekt](https://github.com/detekt/detekt) to check the code quality
 ```shell
 ./gradlew detekt
 ```
+
+## Contributing
+
+Check the [guidelines](CONTRIBUTING.md).
