@@ -38,7 +38,7 @@ dependencies {
     val coroutineVersion = "1.6.4"
     val mockBukkitVersion = "3.19.1"
     val junitVersion = "5.10.0"
-    val mockkVersion = "1.12.5"
+    val mockkVersion = "1.13.7"
     val kotestVersion = "5.6.2"
     val koinVersion = "3.4.3"
 
