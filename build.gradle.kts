@@ -31,14 +31,13 @@ repositories {
 }
 
 dependencies {
-    val paperVersion = "1.20-R0.1-SNAPSHOT"
+    val paperVersion = "1.20.1-R0.1-SNAPSHOT"
     val rushyApiVersion = "2.1.0"
-    val commandApiVersion = "9.0.3"
-
-    val coroutineVersion = "1.6.4"
-    val mockBukkitVersion = "3.19.1"
+    val commandApiVersion = "9.1.0"
+    val coroutineVersion = "1.7.3"
+    val mockBukkitVersion = "3.19.2"
     val junitVersion = "5.10.0"
-    val mockkVersion = "1.12.5"
+    val mockkVersion = "1.13.7"
     val kotestVersion = "5.7.1"
     val koinVersion = "3.4.3"
 
