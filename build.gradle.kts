@@ -36,7 +36,7 @@ dependencies {
     val commandApiVersion = "9.0.3"
 
     val coroutineVersion = "1.6.4"
-    val mockBukkitVersion = "3.19.1"
+    val mockBukkitVersion = "3.19.2"
     val junitVersion = "5.10.0"
     val mockkVersion = "1.12.5"
     val kotestVersion = "5.6.2"
