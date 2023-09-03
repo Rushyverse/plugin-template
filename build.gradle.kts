@@ -35,7 +35,7 @@ dependencies {
     val rushyApiVersion = "2.1.0"
     val commandApiVersion = "9.0.3"
 
-    val coroutineVersion = "1.6.4"
+    val coroutineVersion = "1.7.3"
     val mockBukkitVersion = "3.19.1"
     val junitVersion = "5.10.0"
     val mockkVersion = "1.12.5"
