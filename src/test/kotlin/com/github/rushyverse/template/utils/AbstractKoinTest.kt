@@ -43,5 +43,4 @@ open class AbstractKoinTest {
 
     fun loadApiPluginModule(moduleDeclaration: ModuleDeclaration): Module =
         loadModule(APIPlugin.ID_API, moduleDeclaration = moduleDeclaration)
-
 }

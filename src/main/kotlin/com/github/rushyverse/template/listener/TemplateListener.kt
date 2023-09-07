@@ -14,7 +14,7 @@ import kotlin.time.Duration.Companion.seconds
  * Example listener.
  * @property clientManager Client manager to retrieve custom player data.
  */
-class TemplateListener(plugin: Plugin): Listener {
+class TemplateListener(plugin: Plugin) : Listener {
 
     private val clientManager: ClientManager by inject(plugin.id)
 
