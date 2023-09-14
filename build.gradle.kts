@@ -39,7 +39,7 @@ dependencies {
     val junitVersion = "5.10.0"
     val mockkVersion = "1.13.7"
     val kotestVersion = "5.7.1"
-    val koinVersion = "3.4.3"
+    val koinVersion = "3.5.0"
 
     compileOnly(kotlin("stdlib"))
 
