@@ -33,7 +33,7 @@ repositories {
 dependencies {
     val paperVersion = "1.20.1-R0.1-SNAPSHOT"
     val rushyApiVersion = "2.1.0"
-    val commandApiVersion = "9.1.0"
+    val commandApiVersion = "9.2.0"
     val coroutineVersion = "1.7.3"
     val mockBukkitVersion = "3.19.2"
     val junitVersion = "5.10.0"
