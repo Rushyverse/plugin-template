@@ -4,7 +4,7 @@ plugins {
     embeddedKotlin("jvm")
     embeddedKotlin("plugin.serialization")
     id("com.github.johnrengelman.shadow") version "8.1.1"
-    id("io.gitlab.arturbosch.detekt") version "1.23.1"
+    id("io.gitlab.arturbosch.detekt") version "1.23.2"
     jacoco
 }
 
